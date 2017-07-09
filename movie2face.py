@@ -1,7 +1,7 @@
 import cv2
 import glob
 
-video_path = './other.mp4'
+video_path = './(動画ファイル名)'
 video_name = video_path[2:8] + '_'
 output_path = './movie/'
 out_face_path = './face/'
