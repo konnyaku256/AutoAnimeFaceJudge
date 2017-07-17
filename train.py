@@ -17,7 +17,8 @@ IMAGE_PIXELS = IMAGE_SIZE*IMAGE_SIZE*3
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 flags.DEFINE_string('label', 'label.txt', 'File name of label')
-flags.DEFINE_string('train_dir', './', 'Directory to put the training data.')
+flags.DEFINE_string('train_dir', './tmp/data', 'Directory to put the training data.')
+# max_step、sbatch_size、learning_rateの各パラメータは学習データによって適切な値を設定する
 flags.DEFINE_integer('max_steps', 100, 'Number of steps to run trainer.')
 flags.DEFINE_integer('batch_size', 20, 'Batch size'
                      'Must divide evenly into the dataset sizes.')
